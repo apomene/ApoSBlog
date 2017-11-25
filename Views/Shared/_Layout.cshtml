@@ -42,7 +42,8 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2017 - ApoSBlog</p>
+            <p>&copy; @DateTime.Now.Year  FTP- Trifilix</p>
+            <div style="float:right"   class="addthis_inline_share_toolbox"></div>
         </footer>
     </div>
 
@@ -65,8 +66,12 @@
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+       
     </environment>
-
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a19b640ac1306e0"></script>
     @RenderSection("Scripts", required: false)
+  
 </body>
 </html>
